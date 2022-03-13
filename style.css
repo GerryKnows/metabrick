@@ -1,12 +1,17 @@
-#chart {
-    max-height: 500px;
-  
-    
-    
-}
+
 
 #myChart {
-   
-    background-color: black;
-
+    padding-left: 0;
+    padding-right: 0;
+    background-color: black;   
+    
 }
+
+#container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+

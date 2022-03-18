@@ -1,5 +1,5 @@
 
-const API_URL = 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,SOL&tsyms=USD,EUR';
+const API_URL = 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC&tsyms=USD,EUR';
 
 const HTMLResponse = document.querySelector("#app");
 const ul = document.createElement('ul');
@@ -8,19 +8,22 @@ const ul = document.createElement('ul');
 fetch (`${API_URL}`)
 .then((response) => response.json())
 .then((users) => {
-  Array.from(users).forEach(data => {
+  Object.keys(users).forEach(BTC => {
         let elem = document.createElement('li');
-        elem.appendChild(document.createTextNode(`Nombre: ${data.BTC.USD} Correo: ${data.ETH.USD} aidi: ${data.SOL.USD}`)
+        elem.appendChild(document.createTextNode(`Bitcoin a Dollar: ${users[BTC].USD} Bitcoin a Euro: ${users[BTC].EUR}`)
         );
         ul.appendChild(elem);
     });
     HTMLResponse.appendChild(ul);
 });
 
+// 👇️ with Objects
+const obj = {name: 'Tom', country: 'Chile'};
 
-
-  
-    
+Object.keys(obj).forEach(key => {
+  console.log(key); // 👉️ "name", "country"
+  console.log(obj[key]); // 👉️ "Tom", "Chile"
+});
 
 
   // console.log( `Ethereum: ${json.ETH.USD} Bitcoin: ${json.BTC.USD } Solana: ${json.SOL.USD }`))

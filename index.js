@@ -7,9 +7,6 @@ let gradient = ctx.createLinearGradient(0,0,0,400)
 gradient.addColorStop(0,"rgb(158,118,46)");
 gradient.addColorStop(1,"rgb(233,202,135)");
 
-
-
-
 const labels = [
     '23-feb ',
     '24-feb',

@@ -53,8 +53,8 @@
 
     <!-- Chart -->
 
-    <section id="chart" class="mt-4 mb-4 col-12 ">
-        <div class="container col-12 col-md-8 ">
+    <section id="chart" class="mt-4 mb-4  offset-2 col-12 col-md-8 ">
+        <div class="container text-center col-12 col-md-8 ">
             <div class="row ">
                 <canvas id="myChart" width="400" height ="300"></canvas>
                 
@@ -67,7 +67,36 @@
 
     <!-- Cripto Analisis -->
 
-    <div id="app"></div>
+    <div id="api"></div>
+
+    <div class="container col-6 text-center d-grid gap-2 ">
+        <button class="btn btn-primary" type="button" onclick="traer()">Las 10 cryptos más chidas</button>
+        <div class=" mt-5" ></div>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Icono</th>
+              <th scope="col">Moneda</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Market Cap</th>
+            </tr>
+          </thead>
+          <tbody id="contenido">
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+          
+          </tbody>
+        </table>
+    </div>
+
+    
+
+
 
     <!-- /Cripto Analisis -->
 

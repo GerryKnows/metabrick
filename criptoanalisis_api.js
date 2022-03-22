@@ -143,9 +143,7 @@ function tabla(users) {
     // console.log(valor.CoinInfo.Name)
     contenido.innerHTML += `
     <tr>
-         <th scope="row">
-         <img src="${valor.CoinInfo.ImageUrl}" class="img-thumbnail" alt="...">
-         </th>
+         
          <td>${valor.CoinInfo.Name}</td>
          <td> $${valor.RAW.USD.PRICE}</td>
          <td>$${valor.RAW.USD.MKTCAP}</td>
